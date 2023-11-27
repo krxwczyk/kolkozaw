@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% load static %}
+<h1>{{user.username}}</h1>
+<img src="{% static 'img/profile.jpg' %}" alt="">
+<div class="profile-container">
+    <div class="topics">
+        {% include 'base/topics.html' %}
+    </div>
+
+    <div class="rooms">
+        {% include 'base/feed.html' %}
+    </div>
+
+    <div class="activity">
+        {% include 'base/activity.html' %}
+    </div>
+</div>
+
+{% endblock content%}
