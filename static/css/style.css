@@ -168,7 +168,7 @@ body
 
 .navbar {
     display: flex;
-    gap: 450px;
+    gap: 200px;
 }
 
 .navbar .login-redirect a {
